@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derecho de los animales - Índice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff4f7; /* Fondo rosa pastel */
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-title {
+            color: #d1008f;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            color: #b3005e;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .boton {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #fddde6; /* Rosa claro */
+            color: #70003b;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #fac5d6;
+            color: #500027;
+        }
+
+        .media-card {
+            background-color: #fff;
+            border: 1px solid #f0d3df;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(200, 100, 150, 0.1);
+        }
+
+        .media-title {
+            color: #c2185b;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .media-description {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .custom-video,
+        .custom-audio {
+            width: 100%;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .audio-info {
+            margin-top: 5px;
+            color: #6a1b4d;
+        }
+
+        .custom-alert {
+            background-color: #ffe2eb;
+            border-color: #f8bbd0;
+            color: #800040;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-container,
+        .audio-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <header class="text-center py-5">
+                    <h1 class="main-title">
+                        <i class="fas fa-paw me-3"></i>
+                        Derecho de los animales
+                        <i class="fas fa-heart ms-3"></i>
+                    </h1>
+                    <p class="subtitle">Educación y conciencia sobre los derechos de nuestros compañeros animales</p>
+                </header>
+
+                <!-- Ejercicios -->
+                <section class="exercises-section mb-5">
+                    <h2 class="section-title">Ejercicios Educativos</h2>
+                    <div class="button-container">
+                        <a class="boton" href="ejercicio1.1.html" target="_blank">
+                            <i class="fas fa-book-open me-2"></i>Ejercicio 1
+                        </a>
+                        <a class="boton" href="ejercicio2.html" target="_blank">
+                            <i class="fas fa-pen me-2"></i>Ejercicio 2
+                        </a>
+                        <a class="boton" href="ejercicio3.html" target="_blank">
+                            <i class="fas fa-tasks me-2"></i>Ejercicio 3
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Videos -->
+                <section class="multimedia-section mb-5">
+                    <h2 class="section-title">
+                        <i class="fas fa-video me-2"></i>Videos Educativos
+                    </h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <div class="media-card">
+                                <h3 class="media-title">Los Derechos Fundamentales de los Animales</h3>
+                                <div class="video-container">
+                                    <video 
+                                        id="video1" 
+                                        class="custom-video" 
+                                        controls 
+                                        preload="metadata"
+                                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='60'%3E%3Crect width='100%25' height='100%25' fill='%23fdf3f7'/%3E%3Ctext x='50%25' y='50%25' font-size='12' text-anchor='middle' dy='.3em' fill='%23d1008f'%3EVideo 1%3C/text%3E%3C/svg%3E">
+                                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <p class="media-description">
+                                    Explora los principios básicos que sustentan los derechos de los animales y su importancia en nuestra sociedad moderna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="media-card">
+                                <h3 class="media-title">Protección Animal en la Legislación</h3>
+                                <div class="video-container">
+                                    <video 
+                                        id="video2" 
+                                        class="custom-video" 
+                                        controls 
+                                        preload="metadata"
+                                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='60'%3E%3Crect width='100%25' height='100%25' fill='%23fdf3f7'/%3E%3Ctext x='50%25' y='50%25' font-size='12' text-anchor='middle' dy='.3em' fill='%23d1008f'%3EVideo 2%3C/text%3E%3C/svg%3E">
+                                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <p class="media-description">
+                                    Conoce las leyes y regulaciones que protegen a los animales y cómo se implementan a nivel nacional e internacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Audios -->
+                <section class="multimedia-section mb-5">
+                    <h2 class="section-title">
+                        <i class="fas fa-headphones me-2"></i>Podcasts y Audio Educativo
+                    </h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <div class="media-card">
+                                <h3 class="media-title">Entrevista: Experto en Bienestar Animal</h3>
+                                <div class="audio-container">
+                                    <audio id="audio1" class="custom-audio" controls preload="metadata">
+                                        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                                    </audio>
+                                    <div class="audio-info">
+                                        <i class="fas fa-microphone me-2"></i>
+                                        <span class="duration">Duración: 15:30</span>
+                                    </div>
+                                </div>
+                                <p class="media-description">
+                                    Escucha la perspectiva de un veterinario especializado en bienestar animal sobre los desafíos actuales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="media-card">
+                                <h3 class="media-title">Reflexiones sobre Ética Animal</h3>
+                                <div class="audio-container">
+                                    <audio id="audio2" class="custom-audio" controls preload="metadata">
+                                        <source src="https://www.soundjay.com/nature/sounds/rain-03.wav" type="audio/wav">
+                                    </audio>
+                                    <div class="audio-info">
+                                        <i class="fas fa-podcast me-2"></i>
+                                        <span class="duration">Duración: 22:45</span>
+                                    </div>
+                                </div>
+                                <p class="media-description">
+                                    Una reflexión profunda sobre la ética en el trato hacia los animales y nuestras responsabilidades morales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Info -->
+                <section class="info-section">
+                    <div class="alert alert-info custom-alert" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Nota:</strong> Todo el contenido multimedia está diseñado con fines educativos para promover la conciencia sobre los derechos de los animales.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

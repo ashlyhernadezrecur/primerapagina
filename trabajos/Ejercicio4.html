@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derecho de los animales</title>
+    
+    <!-- Fuentes bonitas desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dbeafe; /* azul pastel */
+        }
+
+        .header {
+            background-color: #fcefee;
+            color: #c8a2c8; /* morado pastel */
+            text-align: center;
+            padding: 20px;
+            font-size: 48px; /* más grande */
+            font-family: 'Pacifico', cursive; /* letra bonita */
+            font-weight: normal;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .main {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        .menu {
+            width: 220px;
+            background-color: #fcefee;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+            font-family: 'Poppins', sans-serif; /* letra bonita para índice */
+        }
+
+        .menu h2 {
+            color: #a78bfa; /* lavanda pastel */
+            font-size: 20px; /* mediana */
+            margin-bottom: 10px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #6b4c4c;
+            display: block;
+            padding: 8px 12px;
+            border: 1px solid #f3a8b5;
+            background-color: #ffe5ec;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            background-color: #f8c8dc;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fffaf7;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #fffaf7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Derecho de los Animales
+    </div>
+
+    <div class="main">
+        <div class="menu">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="Ejercicio1.1.html" target="contentFrame">Página con elementos básicos y características al texto</a></li>
+                <li><a href="Ejercicio2.html" target="contentFrame">Página con elementos gráficos</a></li>
+                <li><a href="Ejercicio3.html" target="contentFrame">Formularios</a></li>
+                <li><a href="#" onclick="clearFrame()">Opción 4: Limpiar</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <iframe name="contentFrame" id="contentFrame"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function clearFrame() {
+            document.getElementById("contentFrame").src = "about:blank";
+        }
+    </script>
+
+</body>
+</html>
+
